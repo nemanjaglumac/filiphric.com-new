@@ -28,7 +28,7 @@ const video = ref()
 
 const getLessonDetails = async () => {
   return await supabase
-    .from('testing_api_with_cypress')
+    .from('component_testing_basics')
     .select('title, description, id')
     .eq('slug', slug)
     .single()
@@ -36,7 +36,7 @@ const getLessonDetails = async () => {
 
 const getVideoLink = async (id: any) => {
   return await supabase
-    .from('testing_api_with_cypress_premium')
+    .from('component_testing_basics_premium')
     .select('video_url')
     .eq('id', id)
     .single()
