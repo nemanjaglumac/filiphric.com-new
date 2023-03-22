@@ -26,7 +26,10 @@
 const supabase = useSupabaseClient()
 
 supabase.auth.signInWithOAuth({
-  provider: 'github'
+  provider: 'github',
+  options: {
+    redirectTo: 'http://localhost:8000/courses/testing-api-with-cypress'
+  }
 })
 
 // const loading = ref(false)
