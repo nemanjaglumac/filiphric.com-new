@@ -5,6 +5,7 @@ module.exports = {
   rules: {
     'tailwindcss/no-custom-classname': 'off',
     'vue/no-multiple-template-root': 'off',
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    camelcase: 'off'
   }
 }
